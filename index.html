@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mabizela | Best Paving</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f5f5f5;
+      color:#222;
+      overflow-x:hidden;
+    }
+
+	header{ width:100%; 
+	min-height:100vh; 
+	background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+	url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1600&auto=format&fit=crop'); 
+	background-size:cover; 
+	background-position:center; 
+	display:flex; 
+	align-items:center; 
+	justify-content:center; 
+	text-align:center; 
+	padding:20px; }
+
+    .hero{
+      max-width:800px;
+      color:white;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .hero h1{
+      font-size:4rem;
+      margin-bottom:15px;
+      color:#f4b400;
+    }
+
+    .hero p{
+      font-size:1.2rem;
+      line-height:1.8;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:15px 35px;
+      background:#f4b400;
+      color:#000;
+      text-decoration:none;
+      font-weight:bold;
+      border-radius:40px;
+      transition:0.3s ease;
+    }
+
+    .btn:hover{
+      background:white;
+      transform:translateY(-3px);
+    }
+
+    section{
+      padding:80px 10%;
+	  
+    }
+
+    .about{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:40px;
+      align-items:center;
+    }
+
+    .about img{
+      width:80%;
+      border-radius:15px;
+      box-shadow:0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .about-text h2,
+    .services h2,
+    .contact h2{
+      font-size:2.5rem;
+      margin-bottom:20px;
+      color:#222;
+    }
+
+    .about-text p{
+      line-height:1.8;
+      color:#555;
+    }
+
+    .services{
+      background:white;
+      text-align:center;
+    }
+
+    .service-boxes{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+      margin-top:40px;
+    }
+
+    .box{
+      background:#f9f9f9;
+      padding:35px 25px;
+      border-radius:15px;
+      transition:0.3s ease;
+      box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .box:hover{
+      transform:translateY(-8px);
+      background:#f4b400;
+      color:white;
+    }
+
+    .box h3{
+      margin-bottom:15px;
+    }
+
+    .contact{
+      background:#111;
+      color:white;
+      text-align:center;
+    }
+
+    .contact p{
+      margin:12px 0;
+      font-size:1.1rem;
+    }
+
+    footer{
+      background:#000;
+      color:#aaa;
+      text-align:center;
+      padding:20px;
+      font-size:0.9rem;
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(40px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    @media(max-width:768px){
+      .hero h1{
+        font-size:2.8rem;
+      }
+
+      .hero p{
+        font-size:1rem;
+      }
+    }
+	
+	.box img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:12px;
+  margin-bottom:15px;
+}
+
+.box{
+  overflow:hidden;
+}
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="hero">
+      <h1>Mabizela | Best Paving</h1>
+      <p>
+        Professional paving and construction services in Ekangala,
+        Bronkhorstspruit & Pretoria. We deliver strong, modern,
+        and affordable paving solutions for homes and businesses.
+      </p>
+
+      <a href="tel:0723231707" class="btn">Call Now</a>
+    </div>
+  </header>
+
+  <section class="about">
+    <img src="work.jpg">
+
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+        Mabizela | Best Paving is a trusted paving and construction business
+        based in Ekangala, Bronkhorstspruit. We specialize in delivering
+        quality workmanship, durable paving installations, and professional
+        service for residential and commercial clients.
+        <br><br>
+        Our goal is simple — to create clean, beautiful, and long-lasting
+        paving solutions that improve the appearance and value of your property.
+      </p>
+    </div>
+  </section>
+
+  
+	<section class="services">
+  <h2>Our Services</h2>
+
+  <div class="service-boxes">
+
+    <div class="box">
+      <img src="paving.jpg" alt="Paving">
+
+      <h3>Paving Installation</h3>
+      <p>
+        Beautiful and durable paving for homes,
+        driveways, walkways, and businesses.
+      </p>
+    </div>
+
+    <div class="box">
+      <img src="complete.jpg" alt="complete">
+
+      <h3>Driveway Construction</h3>
+      <p>
+        Professional driveway paving solutions
+        built to last for years.
+      </p>
+    </div>
+
+    <div class="box">
+      <img src="outside.jpg" alt="outside">
+
+      <h3>Renovations</h3>
+      <p>
+        Modern construction and renovation services
+        for residential properties.
+      </p>
+    </div>
+
+    <div class="box">
+      <img src="stairs.jpg" alt="stairs">
+
+      <h3>Brick & Stone Work</h3>
+      <p>
+        Strong and stylish brickwork and stone
+        installations with professional finishing.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+
+    <p><strong>Phone:</strong> 072 323 1707</p>
+    <p><strong>Email:</strong> christianmabizela@gmail.com</p>
+    <p><strong>Location:</strong> Ekangala, Bronkhorstspruit, Pretoria, 1021</p>
+
+    <br>
+
+    <a href="mailto:christianmabizela@gmail.com" class="btn">
+      Get A Quote
+    </a>
+  </section>
+
+  <footer>
+    © 2026 Mabizela | Best Paving — All Rights Reserved
+  </footer>
+
+  <script>
+    // Simple smooth scroll effect
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
